@@ -1,10 +1,7 @@
 package com.joaopedro.agendadortarefas.infrastructure.entity;
 
 import com.joaopedro.agendadortarefas.infrastructure.enums.StatusNotificacaoEnum;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.stereotype.Service;
@@ -13,10 +10,12 @@ import java.time.LocalDateTime;
 
 @Service
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Document("tarefa")
+
 public class TarefasEntity {
 
     @Id
